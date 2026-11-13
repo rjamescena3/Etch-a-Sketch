@@ -4,3 +4,4 @@ const container=document.querySelector("#container");
 const square=document.createElement("div");
 
 container.append(square);
+square.classList.add("square");
