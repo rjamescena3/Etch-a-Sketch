@@ -8,4 +8,7 @@ for(let i=1; i<=256; i++){
      square.classList.add("square");
      container.append(square);
 
+     square.addEventListener("mouseover",()=>{
+        square.style.backgroundColor="red";
+     });
 }
