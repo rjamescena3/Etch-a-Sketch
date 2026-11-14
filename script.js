@@ -4,6 +4,12 @@ const container=document.querySelector("#container");
 
 newGridBtn.addEventListener("click",()=>{
     const gridSize=prompt("Enter the number of squares per side");
+
+    if(gridSize>100){
+        alert("Please You Can't Exceed 100 Size!");
+        return;
+    }
+    
     container.textContent="";
     
     const squareSize=832/gridSize;
