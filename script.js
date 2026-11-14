@@ -1,7 +1,11 @@
 console.log("Etch_a_Sketch Project");
 
 const container=document.querySelector("#container");
-const square=document.createElement("div");
 
-container.append(square);
-square.classList.add("square");
+
+for(let i=1; i<=256; i++){
+    const square=document.createElement("div");
+     square.classList.add("square");
+     container.append(square);
+
+}
