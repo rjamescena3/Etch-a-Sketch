@@ -2,14 +2,26 @@ console.log("Etch_a_Sketch Project");
 const newGridBtn=document.querySelector("#new-grid");
 const container=document.querySelector("#container");
 
+newGridBtn.addEventListener("mouseover",()=>{
+    newGridBtn.style.background="green";
+    newGridBtn.style.color="white";
+});
+
+newGridBtn.addEventListener("mouseout",()=>{
+    newGridBtn.style.background="gray";
+    newGridBtn.style.color="white";
+});
+
+
 newGridBtn.addEventListener("click",()=>{
     const gridSize=prompt("Enter the number of squares per side");
 
     if(gridSize>100){
         alert("Please You Can't Exceed 100 Size!");
         return;
-    }
+    }    
 
+    container.style.background="white";
     container.textContent="";
     
     const squareSize=832/gridSize;
