@@ -9,7 +9,7 @@ newGridBtn.addEventListener("click",()=>{
         alert("Please You Can't Exceed 100 Size!");
         return;
     }
-    
+
     container.textContent="";
     
     const squareSize=832/gridSize;
@@ -27,7 +27,8 @@ newGridBtn.addEventListener("click",()=>{
      container.append(square);
      
      square.addEventListener("mouseover",()=>{
-        square.style.backgroundColor="red";
+        const randomColor="#"+Math.floor(Math.random()*16777215).toString(16);
+        square.style.background=randomColor;
      });
     }
 });
